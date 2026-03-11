@@ -6,17 +6,14 @@ dostupnie_ludi = Name_other_name.copy()
 dostupnie_pc = pc_num.copy()
 
 for i in range(11):
-    # Выбираем первого человека случайно
     name_1 = random.randint(0, len(dostupnie_ludi) - 1)
     chelovek1 = dostupnie_ludi[name_1]
     dostupnie_ludi.pop(name_1)
 
-    # Выбираем второго человека случайно (из оставшихся)
     name_2 = random.randint(0, len(dostupnie_ludi) - 1)
     chelovek2 = dostupnie_ludi[name_2]
     dostupnie_ludi.pop(name_2)
 
-    # Выбираем компьютер случайно
     rand_pc = random.randint(0, len(dostupnie_pc) - 1)
     computer = dostupnie_pc[rand_pc]
     dostupnie_pc.pop(rand_pc)
