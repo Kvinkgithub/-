@@ -19,3 +19,6 @@ for i in range(11):
     dostupnie_pc.pop(rand_pc)
 
     print(f"{i + 1}. {chelovek1} и {chelovek2} --> компьютер №{computer}")
+
+arr = [[x if x % 2 == 0 else 0 for x in [random.randint(1, 100) for _ in range(3)]] for _ in range(3)]
+print(arr)
